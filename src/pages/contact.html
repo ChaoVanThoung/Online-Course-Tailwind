@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        class="bg-[#06042E] text-white flex justify-center gap-5 py-3 font-semibold px-4 md:px-8 lg:px-[100px]"
+      >
+        <div><i class="fa-brands fa-telegram text-2xl"></i></div>
+        <p class="text-sm md:text-base">
+          Let's join our community - And get more special course
+        </p>
+      </div>
+
+      <nav
+        class="px-4 md:px-8 lg:px-[100px] py-3 flex justify-between items-center"
+      >
+        <div>
+          <img
+            class="w-[90px] md:w-[110px]"
+            src="https://html.themegenix.com/skillgro/assets/img/logo/logo.svg"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menuToggle" class="focus:outline-none">
+            <svg
+              id="menuIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="block"
+            >
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+            <svg
+              id="closeIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="hidden"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul class="hidden md:flex gap-6 text-[16px]">
+          <li>
+            <a href="../../index.html" class="hover:text-primary">Home</a>
+          </li>
+          <li><a href="./course.html" class="hover:text-primary">Course</a></li>
+          <li>
+            <a href="./contact.html" class="hover:text-primary">Contact</a>
+          </li>
+          <li>
+            <a href="./about-us.html" class="hover:text-primary">About Us</a>
+          </li>
+        </ul>
+
+        <!-- Desktop actions -->
+        <div class="hidden md:flex items-center gap-4 lg:gap-8">
+          <div class="relative">
+            <input
+              class="border border-gray-400 pl-4 pr-10 py-2 w-[200px] lg:w-[300px] rounded-full"
+              type="text"
+              placeholder="Search Course..."
+            />
+            <button
+              class="absolute right-1 top-1/2 transform -translate-y-1/2 text-white bg-primary p-2 rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-shopping text-primary text-2xl"></i>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="bg-secondary py-2 px-5 rounded-full cursor-pointer text-white hover:bg-primary"
+            >
+              Login
+            </button>
+            <button class="py-2 cursor-pointer hover:text-primary">
+              SignUp
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white p-4 shadow-md">
+        <ul class="flex flex-col gap-4 text-[16px]">
+          <li>
+            <a href="../../index.html" class="hover:text-primary">Home</a>
+          </li>
+          <li><a href="./course.html" class="hover:text-primary">Course</a></li>
+          <li>
+            <a href="./contact.html" class="hover:text-primary">Contact</a>
+          </li>
+          <li>
+            <a href="./about-us.html" class="hover:text-primary">About Us</a>
+          </li>
+        </ul>
+        <div class="mt-4">
+          <div class="relative my-4">
+            <input
+              class="border border-gray-400 pl-4 pr-10 py-2 w-full rounded-full"
+              type="text"
+              placeholder="Search Course..."
+            />
+            <button
+              class="absolute right-1 top-1/2 transform -translate-y-1/2 text-white bg-primary p-2 rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <button
+              class="bg-secondary py-2 px-5 rounded-full cursor-pointer text-white"
+            >
+              Login
+            </button>
+            <button class="py-2 cursor-pointer">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <section class="contact-section">
+        <h2>Contact With Us</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="card">
+              <div class="icon">📘</div>
+              <div>
+                <h4>Address</h4>
+                <p>AvenueLoop Drive, Kensington London, UK</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">📲</div>
+              <div>
+                <h4>Phone</h4>
+                <p>AvenueLoop Drive, Kensington London, UK</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">📩</div>
+              <div>
+                <h4>Email-Address</h4>
+                <p>AvenueLoop Drive, Kensington London, UK</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <p>
+              Your email address will not be published. Required fields are
+              marked *
+            </p>
+            <form>
+              <textarea placeholder="Comment *" required></textarea>
+              <div class="form-row">
+                <input type="text" placeholder="Name *" required />
+                <input type="email" placeholder="E-mail *" required />
+                <input type="text" placeholder="Website *" />
+              </div>
+              <button type="submit">Submit Now ➜</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            title="Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.556092901342!2d104.88853587504147!3d11.032032454032643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095123f4fe389f%3A0x9c44403ef68339a9!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1684070921092!5m2!1sen!2skh"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#0a0a20] text-white py-12 px-6 md:px-12 mt-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-xl font-semibold mb-6">Online Course</h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-yellow-500 rounded-full p-2 flex items-center justify-center"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="text-sm">Email</p>
+                  <p class="text-sm">online_course@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-yellow-500 rounded-full p-2 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    fill="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.3 0 262.7 0C176.36 0 121.36 54.42 121.36 153.11V195.3H36.89V288h84.47v224h100.2V288z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm">Facebook</p>
+                  <p class="text-sm">online_course.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Links -->
+          <div>
+            <h3 class="text-lg font-medium mb-4">Company</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  What We Offer
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Our Course
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Teaching Links -->
+          <div>
+            <h3 class="text-lg font-medium mb-4">Teaching</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Become a Teacher
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Teacher Help Center
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Rule & Requirements
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Leadership
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Community Links -->
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h3 class="text-lg font-medium mb-4">Community</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Learners
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Partners
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Blog & News
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Team plane
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect with Us -->
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h3 class="text-lg font-medium mb-4">Connect with Us</h3>
+            <div class="flex gap-3 mb-4">
+              <a
+                href="#"
+                class="bg-blue-600 rounded-full p-2 hover:bg-blue-700 transition-colors"
+              >
+                <i class="fa-regular fa-envelope h-4 w-4"></i>
+                <span class="sr-only">Email</span>
+              </a>
+              <a
+                href="#"
+                class="bg-blue-800 rounded-full p-2 hover:bg-blue-900 transition-colors"
+              >
+                <i class="fa-brands fa-facebook-f h-4 w-4"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+              <a
+                href="#"
+                class="bg-red-600 rounded-full p-2 hover:bg-red-700 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                  ></path>
+                  <polygon
+                    points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                  ></polygon>
+                </svg>
+                <span class="sr-only">YouTube</span>
+              </a>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-2 hover:from-purple-600 hover:to-pink-600 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </div>
+            <div class="flex gap-3">
+              <a href="#">
+                <img
+                  src="https://via.placeholder.com/120x40"
+                  alt="Google Play"
+                  class="h-10 w-auto"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://via.placeholder.com/120x40"
+                  alt="App Store"
+                  class="h-10 w-auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="flex flex-wrap gap-6 mb-4 md:mb-0">
+            <a href="#" class="text-xs hover:text-gray-300 transition-colors">
+              Privacy Practices
+            </a>
+            <a href="#" class="text-xs hover:text-gray-300 transition-colors">
+              Accessibility
+            </a>
+            <a href="#" class="text-xs hover:text-gray-300 transition-colors">
+              Disclaimers
+            </a>
+            <a href="#" class="text-xs hover:text-gray-300 transition-colors">
+              Team of Us
+            </a>
+          </div>
+          <div class="text-xs text-gray-400">
+            Copyright © 2025 <span class="text-white">online_course</span> |
+            Powered by Onecontributor
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
